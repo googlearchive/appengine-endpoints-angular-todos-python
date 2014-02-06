@@ -1,0 +1,29 @@
+application: your-app-id
+version: 1
+runtime: python27
+threadsafe: true
+api_version: 1
+
+handlers:
+# Endpoints handler
+- url: /_ah/spi/.*
+  script: main.application
+
+- url: /
+  static_files: index.html
+  upload: index\.html
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+
+libraries:
+- name: endpoints
+  version: 1.0
