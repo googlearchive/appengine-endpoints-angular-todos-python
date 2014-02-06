@@ -1,0 +1,16 @@
+.done-true {
+    text-decoration: line-through;
+    color: grey;
+}
+input[type=text] {
+    margin-bottom: 0px;
+}
+input[type=checkbox] {
+    margin-top: 0px;
+}
+label {
+    display: inline;
+}
+li {
+    opacity: 1.0;
+}
